@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+     <!-- --------- BOOTSTRAP ---------- -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/c9e60a5f99.js" crossorigin="anonymous"></script>
+
+	<!-- titile img -->
+	<link rel="shortcut icon" type="x-icon" href="IMAGES/profile-img.png" style="height: 100%;">
+	<title>PORTFOLIO-OMKAR-HANDORE</title>
+</head>
+<body>
+	<div class="main-box">
+
+		<!-- ------------  HEADER  ------------ -->
+		<section id="header">
+			<div class="container">
+				<nav>
+					<h1 class="logo">Omkar<span style="color: #ff004f; font-weight: bold;">.</span></h1>
+					<ul id="sidemenu">
+						<li><a href="#header">HOME</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#service">SERVICES</a></li>
+						<li><a href="#project">PROJECTS</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+						<i class="fa-solid fa-xmark menu-icon" onclick="closemenu('sidemenu')"></i>
+					</ul>
+					<i class="fa-solid fa-bars menu-icon"  onclick="openmenu('sidemenu')"></i>
+				</nav>
+				<div class="header-text">
+					<h1>OMKAR HANDORE</h1>
+					<p>JAVA DEVELOPER</p>
+					<p>from Pune, Maharashtra.</p>
+					<h6><a href="IMAGES/OmkarSHandore.pdf" class="btn btn-outline-danger">Download Resume</a></h6>	
+				</div>
+			</div>
+		</section>
+
+		<!-- ------------  ABOUT  ------------ -->
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="IMAGES/profile-img.png">
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<p>"I specialize in creating efficient, scalable, and user-friendly software solutions. With expertise in Java, Spring, and web development, I aim to deliver applications that combine functionality with visually appealing design. My passion lies in building reliable back-end systems and seamlessly integrating them with intuitive, engaging front-end interfaces.On the front-end, I work with technologies such as HTML5, CSS3, basic JavaScript, and frameworks like Bootstrap to create dynamic, user-centric interfaces. Also work database like as MySQL"</p>
+						<div class="tab-title">
+							<h4 class="tab-links active-link" onclick="opentab('detials')">Personal Info</h4>
+							<h4 class="tab-links" onclick="opentab('skills')">Skills</h4>
+							<h4 class="tab-links" onclick="opentab('education')">Education</h4>
+							
+						</div>
+
+						<div class="tab-content active-tab" id="detials">
+							<ul>
+								<li> <i class="fa-solid fa-user"></i>
+									<span>Name:
+									</span>
+									<h6>Omkar Subhash Handore</h6>
+								</li>
+								<li>
+									<i class="fa-solid fa-envelope"></i>
+									<span>Email:
+									</span>
+									<h6>omkarhandore1881@gmail.com</h6>
+								</li>
+								<li>
+									<i class="fa-solid fa-phone"></i>
+									<span>Contact:
+									</span>
+									<h6>+91  9561101881</h6>
+								</li>
+								<li>
+									<i class="fa-solid fa-location-dot"></i>
+									<span>Adress:
+									</span>
+									<h6>Pune, Maharashtra, India</h6>
+								</li>
+								<li>
+									<i class="fa-solid fa-language"></i>
+									<span>Language:
+									</span>
+									<h6>English, Marathi, Hindi</h6>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tab-content" id="skills">
+							<ul>
+								<li><span>Java/Spring</span><br>Developing high-performance, maintainable, and secure back-end systems with Java, JDBC and the Spring ecosystem, ensuring seamless integration and scalability.</li>
+								<li><span>HTML/CSS/Bootstrap</span><br>Crafting visually appealing, responsive, and dynamic web interfaces that enhance user engagement and accessibility across all devices.</li>
+								<li><span>MySQL</span><br>Building efficient, well-structured databases with optimized queries and indexing strategies to support robust and scalable applications.</li>
+							</ul>
+						</div>
+
+						<div class="tab-content" id="education">
+							<ul>
+								<li>
+									<span>Msc(Computer Science)
+										<span style="margin-left: 50px; color:white; font-size: 14px;">2025</span>
+									</span><br>
+									Dr. D.Y. Patil Arts Commerce and Science College, Pimpri Pune.<br>
+									CGPA- 7.45
+								</li>
+
+								<li><span>Bsc(Computer Science)<span style="margin-left: 60px; color:white; font-size: 14px;">2023</span></span><br>New Arts Commerce and Science College, Ahmednagar.<br>
+								CGPA- 7.89</li>
+
+								<li><span>HSC(Science)<span style="margin-left: 150px; color:white; font-size: 14px;;">2020</span></span><br>K.B. Patil Vidyalaya and Junior College, Sarola Kasar Ahmednagar.<br>
+								Percentage- 72.31%</li>
+
+								<li><span>SSC<span style="margin-left: 240px; color:white; font-size: 14px;">2018</span></span><br>K.B. Patil Vidyalaya and Junior College, Sarola Kasar Ahmednagar.<br>
+								Percentage- 82.60%</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ------------  SERVICE  ------------ -->
+		<section id="service">
+			<div class="container">
+				<h1 class="sub-title">My Skills</h1>
+				<div class="service-list">
+					<div class="service-col">
+						<i class="fa-brands fa-java"></i>
+						<h2>Java Development</h2>
+						<p>I build scalable and reliable applications using Java and Spring, focusing on efficient back-end systems and RESTful APIs. I have a strong grasp of OOP principles, design patterns, and JDBC for seamless database interactions.</p>
+					</div>
+					<div class="service-col">
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Development</h2>
+						<p>I create responsive and visually appealing web interfaces using HTML, CSS, and Bootstrap. I focus on building user-friendly designs that work seamlessly across different devices and screen sizes.</p>
+					</div>
+					<div class="service-col">
+						<i class="fa-sharp fa-solid fa-database"></i>
+						<h2>Database Management</h2>
+						<p>I have expertise in MySQL, designing well-structured databases with optimized queries and indexing for efficient data management. I focus on ensuring data integrity, performance, and scalability for seamless application interactions.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ------------  PROJECT  ------------ -->
+		<section id="project">
+			<div class="container">
+				<h1 class="sub-title">My Work</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="IMAGES/work-1.jpg">
+						<div class="layer">
+							<h4>BOOK RECOMMANDATION SYSTEM</h4>
+							<p>This is a console-based project developed using Core Java and JDBC, with MySQL as the backend database. The system provides personalized book recommendations based on user preferences, borrowing history, or ratings.</p>
+							<a href="#"><i class="fa-solid fa-code-compare" style="color: blue"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="IMAGES/work-2.jpg">
+						<div class="layer">
+							<h4>PORTFOLIO</h4>
+							<p>This is a fully responsive student portfolio website built using HTML, CSS, and basic JavaScript. It provides a clean, modern, and user-friendly interface to showcase personal details, skills, projects, and education.</p>
+							<a href="#"><i class="fa-solid fa-code-compare" style="color: blue"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ------------  CONTACT  ------------ -->
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-col-1">
+						<h1 class="sub-title" style="margin-bottom: 15px;">Contact Me</h1>
+							<p><i class="fa-solid fa-envelope"></i>omkarhandore1881@gmail.com</p>
+							<p><i class="fa-solid fa-phone"></i>9561101881</p>
+						<div class="contact-icon"">
+							<a href="https://www.linkedin.com/in/omkar-handore-58a554277"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=919561101881"><i class="fa-brands fa-whatsapp"></i></a>
+							<a href="https://www.instagram.com/omkar_handore__?igsh=MWRobXljMXNxZzdyZw==	"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+						<h6><a href="IMAGES/OmkarSHandore.pdf" class="btn btn-outline-info">Download Resume</a></h6>	
+					</div>
+					<div class="contact-col-2">
+						<form name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Enter your Name" required autocomplete="off">
+							<input type="email" name="Email" placeholder="Enter your Email" required autocomplete="off">
+							<textarea type="text" placeholder="Enter Message" name="Meassage" rows="5" required autocomplete="off"></textarea>
+							<button class="btn btn-outline-warning">Send Message</button>
+						</form>
+						<span id="msg"></span>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<h4>Quick Links</h4>
+				<ul>
+					<li><a href="#header">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#service">SERVICES</a></li>
+					<li><a href="#project">PROJECTS</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		</section>
+		<div class="foot-cont">
+			<p class="text">Copyright ©2025 Omkar Handore. All rights reserved</p>
+		</div>
+
+	</div>
+
+
+	<!-- ABOUT SECTION PERSONAL INFO, SKILLS, EDUCATION,  -->
+	<script >
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-content");
+
+		function  opentab(tabname) {
+			for(tablink of tablinks)
+			{
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents)
+			{
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			// document.getElementsById(tabname).classList.add("active-tab");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+	</script>
+
+	<!-- RESPONSIVE MENU BAR -->
+	<script type="text/javascript"> -->
+		var sidemenu = document.getElementById("sidemenu")
+		function openmenu()
+		{
+			sidemenu.style.right="0px";
+		}
+		function closemenu()
+		{
+			sidemenu.style.right="-200px";
+		}
+	</script>
+
+	<!-- FORM BUTTON (SEND MESSAGE) EVENT -->
+	<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyVZ5Juw5_KP_ldWScCD7SvJIYQ8n337lFM9fB95ZIh-zAg7s2fJ2LT6seX22yOb3JHwA/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); // Ensure response is read
+            })
+            .then(data => {
+                form.reset();
+                setTimeout(() => {
+                    msg.innerHTML = "Message sent successfully";
+                    msg.style.color = "green"; 
+                }, 2000); // Show message after 2 seconds
+                
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 7000); // Hide message after 5 more seconds (total 7s)
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                msg.innerHTML = "Failed to send message!";
+                msg.style.color = "red";
+            });
+    });
+</script>
+	
+</body>
+</html>	
+       
